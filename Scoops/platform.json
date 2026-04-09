@@ -1,0 +1,18 @@
+{
+    "version": "5.10.0-alpha6",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/upsun/cli/releases/download/v5.10.0-alpha6/platform_5.10.0-alpha6_windows_amd64.zip",
+            "bin": [
+                "platform.exe"
+            ],
+            "hash": "2dcc12f163d7a893853ef2230638d1fce523b231e1cfbca77e4b07c5961e6481"
+        }
+    },
+    "homepage": "https://docs.upsun.com/anchors/fixed/cli/",
+    "license": "MIT",
+    "description": "Platform.sh CLI",
+    "depends": [
+        "extras/vcredist2022"
+    ]
+}
