@@ -1,0 +1,18 @@
+{
+    "version": "5.10.0-alpha6",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/upsun/cli/releases/download/v5.10.0-alpha6/upsun_5.10.0-alpha6_windows_amd64.zip",
+            "bin": [
+                "upsun.exe"
+            ],
+            "hash": "e102ba032d69590c7591496515d8e5a978c238df1dd2a6f17d93c44b8939d9c1"
+        }
+    },
+    "homepage": "https://docs.upsun.com/anchors/cli/",
+    "license": "MIT",
+    "description": "Upsun CLI",
+    "depends": [
+        "extras/vcredist2022"
+    ]
+}
