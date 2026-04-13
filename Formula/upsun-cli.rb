@@ -5,14 +5,14 @@
 class UpsunCli < Formula
   desc "Upsun CLI"
   homepage "https://docs.upsun.com/anchors/cli/"
-  version "5.10.0-alpha6"
+  version "5.10.0"
   license "MIT"
 
   depends_on "git" => :optional
 
   on_macos do
-    url "https://github.com/upsun/cli/releases/download/v5.10.0-alpha6/upsun_5.10.0-alpha6_darwin_all.tar.gz"
-    sha256 "6a1ebd655723dbd8e7bc8939ed2204a22be65ff2a030c2880bfdfdcbf22b9730"
+    url "https://github.com/upsun/cli/releases/download/v5.10.0/upsun_5.10.0_darwin_all.tar.gz"
+    sha256 "caea738db7f4302326d1792c127c9e1fe600f6c1c47dd54f423497ecd302e9b6"
 
     def install
       bin.install "upsun"
@@ -22,16 +22,16 @@ class UpsunCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/upsun/cli/releases/download/v5.10.0-alpha6/upsun_5.10.0-alpha6_linux_amd64.tar.gz"
-      sha256 "5b1c16b902a482ec96c22208fb7ac6d90a0d6f65ec27ab949d603d77699d9ef6"
+      url "https://github.com/upsun/cli/releases/download/v5.10.0/upsun_5.10.0_linux_amd64.tar.gz"
+      sha256 "55932b6c9d9af882bb9fc32052fe9b7470e8a2cd8ed8bfe46cf5ac1cb3b3a539"
       def install
         bin.install "upsun"
         generate_completions_from_executable(bin/"upsun", "completion", shells: [:bash, :zsh])
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/upsun/cli/releases/download/v5.10.0-alpha6/upsun_5.10.0-alpha6_linux_arm64.tar.gz"
-      sha256 "d36e9f1b9ab5438dfb989cb997686413037da55cbe7b5defdfd309721de9c47d"
+      url "https://github.com/upsun/cli/releases/download/v5.10.0/upsun_5.10.0_linux_arm64.tar.gz"
+      sha256 "a13d0affa65b9f4d8ab228a6641bdd392a80393f4dcbe350b998c3c5d21da02a"
       def install
         bin.install "upsun"
         generate_completions_from_executable(bin/"upsun", "completion", shells: [:bash, :zsh])
