@@ -5,14 +5,14 @@
 class PlatformshCli < Formula
   desc "Platform.sh CLI"
   homepage "https://docs.upsun.com/anchors/fixed/cli/"
-  version "5.10.8"
+  version "5.11.0"
   license "MIT"
 
   depends_on "git" => :optional
 
   on_macos do
-    url "https://github.com/upsun/cli/releases/download/v5.10.8/platform_5.10.8_darwin_all.tar.gz"
-    sha256 "efff29f811af80db265e23616f1596dda5342501c17d2e8b277722dff8d4a508"
+    url "https://github.com/upsun/cli/releases/download/v5.11.0/platform_5.11.0_darwin_all.tar.gz"
+    sha256 "e8727f3889f2f2b509c60935332f67e963fe5f9153551e3272e6b6798857b5a8"
 
     def install
       bin.install "platform"
@@ -22,16 +22,16 @@ class PlatformshCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/upsun/cli/releases/download/v5.10.8/platform_5.10.8_linux_amd64.tar.gz"
-      sha256 "d43169ab06b63836acf6e51c3c4dad211f706affc9daf8be1d53b08ccb65a3a8"
+      url "https://github.com/upsun/cli/releases/download/v5.11.0/platform_5.11.0_linux_amd64.tar.gz"
+      sha256 "8f65a2567fa17271cc5165dced3aa44f0782f6c234aaa61634f407cbdaf425a0"
       def install
         bin.install "platform"
         generate_completions_from_executable(bin/"platform", "completion", shells: [:bash, :zsh])
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/upsun/cli/releases/download/v5.10.8/platform_5.10.8_linux_arm64.tar.gz"
-      sha256 "7a2def07488249ee9785b5f58819cea62600d5612ba7dbd56e32b669fd759de8"
+      url "https://github.com/upsun/cli/releases/download/v5.11.0/platform_5.11.0_linux_arm64.tar.gz"
+      sha256 "f810061dc99ab39596dd42911e10496133793219063501c395c6960fc42b7350"
       def install
         bin.install "platform"
         generate_completions_from_executable(bin/"platform", "completion", shells: [:bash, :zsh])
