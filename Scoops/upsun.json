@@ -1,12 +1,12 @@
 {
-    "version": "5.12.0",
+    "version": "5.13.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/upsun/cli/releases/download/v5.12.0/upsun_5.12.0_windows_amd64.zip",
+            "url": "https://github.com/upsun/cli/releases/download/v5.13.0/upsun_5.13.0_windows_amd64.zip",
             "bin": [
                 "upsun.exe"
             ],
-            "hash": "435a672496c4b2a5803a809ab63899007710e7d0db03cdef3ab29e0df670d253"
+            "hash": "073734dd751b57dcd9bcc0aaa262b2c206dea27e030453205852a4af2b9568c7"
         }
     },
     "homepage": "https://docs.upsun.com/anchors/cli/",
